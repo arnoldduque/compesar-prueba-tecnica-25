@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/compesar-prueba-tecnica-25/v17
+/bibliaAPI/.vs/bibliaAPI/copilot-chat/7620fd1a/sessions
+/bibliaAPI/.vs/bibliaAPI/CopilotIndices/17.14.1204.46620
+/bibliaAPI/.vs/bibliaAPI/CopilotIndices/17.14.1204.46620/CodeChunks.db
+/bibliaAPI/.vs/bibliaAPI/DesignTimeBuild
+/bibliaAPI/.vs/bibliaAPI/FileContentIndex
+/bibliaAPI/bin/Debug/net8.0
+/bibliaAPI/obj
+/bibliaAPI-Tests/bin/Debug/net8.0
+/bibliaAPI-Tests/obj
+/bibliaAPI/.vs/bibliaAPI/v17
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
