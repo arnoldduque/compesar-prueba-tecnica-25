@@ -1,6 +1,6 @@
-@bibliaAPI_HostAddress = http://localhost:5112
+@bibliaAPI_HostAddress = http://localhost:32808dot
 
-GET {{bibliaAPI_HostAddress}}/weatherforecast/
+GET {{bibliaAPI_HostAddress}}/Genesis/1
 Accept: application/json
 
 ###
