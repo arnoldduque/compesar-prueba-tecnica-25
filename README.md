@@ -75,20 +75,20 @@ Se debe consumir la API pública bible-api.com
 
 ## Documentación
 ### Como contruir y ejecutar el servicio
-- Descargar e instalar la ultima versión de [.NET 8](https://dotnet.microsoft.com/en-us/download). Verificar la version con el siguiente comando: ``` dotnet --version ```
-- Descargar e instalar la ultima versión de [Docker](https://docs.docker.com/desktop/setup/install/windows-install/). Seleccionar la configuracion con maquinas Linux. Verificar la version con el siguiente commando: ``` docker --version ```
+- Descargar e instalar la última versión de [.NET 8](https://dotnet.microsoft.com/en-us/download). Verificar la versión con el siguiente comando: ``` dotnet --version ```
+- Descargar e instalar la última versión de [Docker](https://docs.docker.com/desktop/setup/install/windows-install/). Seleccionar la configuracion con maquinas Linux. Verificar la versión con el siguiente commando: ``` docker --version ```
 - Descagar el repositorio.
-- En una consola con permisos de adminitrador, ir a la raiz del proyecto donde esta ubicado el archivo **bibliaAPI.sln** y ejecutar los siguientes comandos:
+- En una consola con permisos de adminitrador, ir a la raíz del proyecto donde esta ubicado el archivo **bibliaAPI.sln** y ejecutar los siguientes comandos:
   - Para verificar que el proyecto se descargo correctamente: ``` dotnet build ```
-  - Para construir la imagen de Docker: ```docker build -t bibliaapi:1.0 .```
-  - Para montar el contenedor de la imagen: ```docker run -p 5000:8080 bibliaapi:1.0```
+  - Para construir la imagen de Docker: ``` docker build -t bibliaapi:1.0 . ```
+  - Para montar el contenedor de la imagen: ``` docker run -p 5000:8080 bibliaapi:1.0 ```
 ### Como consumir los servicios expuestos
 Si los anteriores comandos se ejecutan correctamente, el servicio ya esta disponible y puede ser consumido con diferentes ejemplos:
 - (http://localhost:5000/Genesis/1)
 - (http://localhost:5000/Genesis/2)
 - (http://localhost:5000/Genesis/20)
 ### Como acceder a la base de datos
-La base de datos esta montada sobre SQLite3, de modo que el modelo relacional se puede acceder a traves de un archivo en la raiz del contenedor llamado **biblia.db** de la siguiente forma:
+La base de datos esta montada sobre SQLite3, de modo que el modelo relacional se puede acceder a traves de un archivo en la raíz del contenedor llamado **biblia.db** de la siguiente forma:
 - Mientras el contenedor aun esta ejecutandose con los pasos anteriores y luego de haber llamado varios de los endpoints, se debe abrir una nueva ventana de comando con permisos de administrador.
 - Listamos todos los contendores con el comando: ```docker ps``` 
   
